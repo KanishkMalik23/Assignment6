@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    overflow-x:hidden;
+    flex-direction: column;
+    gap: 8rem;
+    padding: 1rem 3rem;
+    background-color: #0a0908;
+    color: #e0ddcf;
+}
+
+nav{
+    display: flex;
+   justify-content: center;
+   width: 100vw;
+    gap: 2rem;
+}
+nav>a{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+}
+nav>a:hover{
+    text-decoration: underline;
+}
+.heroSection{
+    display: flex;
+    gap: 4rem;
+    justify-content: space-around;
+    align-items: end;
+    padding: 20px 5px;
+}
+.heroSection > h1{
+    width: 70vw;
+    font-size: 9.5rem;
+    text-shadow: 1px 10px 0.5px black;
+}
+.heroSection > span{
+     font-family: "Roboto", sans-serif;
+}
+#contactBtn{
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 30px;
+    width: 15vw;
+    height: max-content;
+
+    background-color: transparent;
+    color: white;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+#contactBtn:hover, .moreBtn:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 15px 5px rgba(142, 68, 173, 0.7); 
+}
+.portfolioSection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 10px;
+    align-items: center;
+}
+span{
+    transition: all 0.5s ease-in-out;
+}
+span:hover{
+    zoom: 105%;
+    cursor: pointer;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    padding: 5px;
+    align-self: center;
+    gap: 1rem;
+    
+}
+.card>img{
+    transition: all 0.3s ease-in-out;
+}
+.cardContent{
+    font-size: 1rem;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    line-height: 2rem;
+}
+.cardContentContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.moreBtn{
+    width: 5vw;
+    padding: 5px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.card>img:hover{
+    zoom: 105%;
+    cursor: pointer;
+}
+.serviceSection{
+    display: flex;
+    padding: 4rem;
+    gap: 4rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.serviceSection>img{
+    align-self: center;
+    width: 10vw;
+    height: 20vh;
+    transition: all 0.5s ease-in-out;
+}
+.serviceSection>img:hover{
+    cursor: pointer;
+    zoom: 110%;
+}
+.serviceSection>h1{
+    font-size: 9.5rem;
+}
+.testimonialSection{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.testimonialSection>h3{
+    font-size: 9.5rem;
+}
+.testcard{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px solid white;
+    padding: 1.5rem;
+    width: 25vw;
+    border-radius: 10px;
+}
+.contactContainer{
+    width: 30vw;
+    padding: 2rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 3px solid white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+#contacttext{
+    text-align: center;
+    font-size: 9.5rem;
+}
+.inputContainer{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 1rem;
+}
+input,textarea{
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.footer{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.footer>img{
+    transition: all 0.5s ease-in-out;
+    width: 2vw;
+    height: 4vh;
+}
